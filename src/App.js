@@ -19,7 +19,7 @@ function App() {
         { path: '/backpack', element: <BackpackCollection></BackpackCollection> },
         { path: '/subscribe', element: <Subscribe></Subscribe> }
       ]
-    },
+    }
 
   ])
   return (
