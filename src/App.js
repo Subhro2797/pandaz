@@ -1,10 +1,11 @@
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './components/Home/Home';
-import About from './components/About/About';
-import Products from './components/Products/Products';
 import Main from './layout/Main/Main';
-import Contacts from './components/Contacts/Contacts';
+import Subscribe from './components/Subscribe/Subscribe';
+import BackpackCollection from './components/BackpackCollection/BackpackCollection';
+import ShoesContainer from './components/ShoesContainer/ShoesContainer';
+
 
 function App() {
   const router = createBrowserRouter([
@@ -14,15 +15,9 @@ function App() {
       children: [
         { path: '/', element: <Home></Home> },
         { path: '/home', element: <Home></Home> },
-        { path: 'about', element: <About></About> },
-        { path: '/products', element: <Products></Products> },
-        {
-          path: '/contacts',
-          loader: async () => {
-            return fetch('https://jsonplaceholder.typicode.com/users')
-          },
-          element: <Contacts></Contacts>
-        }
+        { path: 'shoes', element: <ShoesContainer></ShoesContainer> },
+        { path: '/backpack', element: <BackpackCollection></BackpackCollection> },
+        { path: '/subscribe', element: <Subscribe></Subscribe> }
       ]
     },
 
@@ -30,6 +25,8 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
+
+
     </div>
   );
 }
