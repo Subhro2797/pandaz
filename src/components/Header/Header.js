@@ -9,7 +9,7 @@ const Header = () => {
         <div className='header container'>
             <nav className="navbar navbar-expand-lg fixed-top bg-light">
                 <div className="container">
-                    <a className="navbar-brand" href='#logo'>
+                    <a className="navbar-brand" href=" ">
                         <img src={logo} alt="Bootstrap" />
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"

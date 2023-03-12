@@ -15,7 +15,8 @@ function App() {
       children: [
         { path: '/', element: <Home></Home> },
         { path: '/home', element: <Home></Home> },
-        { path: 'shoes', element: <ShoesContainer></ShoesContainer> },
+        { path: '/products', element: <Home></Home> },
+        { path: '/shoes', element: <ShoesContainer></ShoesContainer> },
         { path: '/backpack', element: <BackpackCollection></BackpackCollection> },
         { path: '/subscribe', element: <Subscribe></Subscribe> }
       ]
@@ -25,7 +26,6 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
-
 
     </div>
   );
