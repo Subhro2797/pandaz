@@ -1,15 +1,27 @@
 {
   "files": {
-    "main.css": "/products/static/css/main.502c86e2.css",
-    "main.js": "/products/static/js/main.cc935c78.js",
+    "main.css": "/products/static/css/main.5d54b8d4.css",
+    "main.js": "/products/static/js/main.7706dc7d.js",
     "static/js/787.d0acb16e.chunk.js": "/products/static/js/787.d0acb16e.chunk.js",
+    "static/media/bag-1.png": "/products/static/media/bag-1.7fbae368abb324b0ac64.png",
+    "static/media/bag-3.png": "/products/static/media/bag-3.207c38b7c334d07da429.png",
+    "static/media/shoe-2.png": "/products/static/media/shoe-2.86de3df886d16bce9d3c.png",
+    "static/media/shoe-3.png": "/products/static/media/shoe-3.4499666699b7ca75e8a4.png",
+    "static/media/tv.png": "/products/static/media/tv.2027d93c2010cf1f8d9b.png",
+    "static/media/bag-2.png": "/products/static/media/bag-2.4a5ff76608b4b637361f.png",
+    "static/media/headphone.png": "/products/static/media/headphone.977932808672e07d9138.png",
+    "static/media/shoe-1.png": "/products/static/media/shoe-1.39becc25e9f74ee5ba80.png",
+    "static/media/xbox.png": "/products/static/media/xbox.f7ce21b8e0a39f7c6653.png",
+    "static/media/watch.png": "/products/static/media/watch.0e65bd8af3a8751ddf12.png",
+    "static/media/shoes.png": "/products/static/media/shoes.7ec0ab4ca2df0c91de30.png",
+    "static/media/bag.png": "/products/static/media/bag.db5ae57bbe7f904c22d4.png",
     "index.html": "/products/index.html",
-    "main.502c86e2.css.map": "/products/static/css/main.502c86e2.css.map",
-    "main.cc935c78.js.map": "/products/static/js/main.cc935c78.js.map",
+    "main.5d54b8d4.css.map": "/products/static/css/main.5d54b8d4.css.map",
+    "main.7706dc7d.js.map": "/products/static/js/main.7706dc7d.js.map",
     "787.d0acb16e.chunk.js.map": "/products/static/js/787.d0acb16e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.502c86e2.css",
-    "static/js/main.cc935c78.js"
+    "static/css/main.5d54b8d4.css",
+    "static/js/main.7706dc7d.js"
   ]
 }
