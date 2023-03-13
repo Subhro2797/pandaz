@@ -3,7 +3,7 @@ import Carousols from '../Carousols/Carousols';
 
 const Carousolcontainer = () => {
     return (
-        <div className="mt-5">
+        <div className="mt-5 container">
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                 <Carousols></Carousols>
             </div>
