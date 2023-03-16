@@ -1,12 +1,11 @@
 import React from 'react';
-import Backpack from '../Backpack/Backpack';
 import bag1 from '../../images/bags/bag-1.png';
 import bag2 from '../../images/bags/bag-2.png';
 import bag3 from '../../images/bags/bag-3.png';
 
 const bagdata = {
     data1: {
-        name: 'Safar',
+        name: 'Safari',
         price: '$50',
         img: `${bag1}`,
         id: '1'
@@ -36,7 +35,7 @@ const BackpackGallery = () => {
                     <div className="card border border-0 shadow-lg h-100">
                         <img src={bagdata.data1.img} className="card-img-top" alt="..." />
                         <div className="card-body">
-                            <h5 className="card-title">{bagdata.data1.name} <span className="badge bg-secondary bg-warning">New</span></h5>
+                            <h5 className="card-title fs-1">{bagdata.data1.name} </h5>
 
                         </div>
                         <div className="m-3">
@@ -49,7 +48,7 @@ const BackpackGallery = () => {
                     <div className="card border border-0 shadow-lg h-100">
                         <img src={bagdata.data2.img} className="card-img-top" alt="..." />
                         <div className="card-body">
-                            <h5 className="card-title">{bagdata.data2.name} <span className="badge bg-secondary bg-warning">New</span></h5>
+                            <h5 className="card-title fs-1">{bagdata.data2.name}</h5>
 
                         </div>
                         <div className="m-3">
@@ -62,7 +61,7 @@ const BackpackGallery = () => {
                     <div className="card border border-0 shadow-lg h-100">
                         <img src={bagdata.data3.img} className="card-img-top" alt="..." />
                         <div className="card-body">
-                            <h5 className="card-title">{bagdata.data3.name} <span className="badge bg-secondary bg-warning">New</span></h5>
+                            <h5 className="card-title fs-1">{bagdata.data3.name}</h5>
 
                         </div>
                         <div className="m-3">

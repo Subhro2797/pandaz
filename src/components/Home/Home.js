@@ -22,7 +22,6 @@ const Home = () => {
             <BackpackCollection></BackpackCollection>
             <Subscribe></Subscribe>
             <Footer></Footer>
-            {/* <Productdetail></Productdetail> */}
 
         </div>
     );
