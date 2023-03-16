@@ -5,6 +5,10 @@ import Main from './layout/Main/Main';
 import Subscribe from './components/Subscribe/Subscribe';
 import BackpackCollection from './components/BackpackCollection/BackpackCollection';
 import ShoesContainer from './components/ShoesContainer/ShoesContainer';
+import Productdetail from './components/Productdetail/Productdetail';
+import Gallery from './components/Gallery/Gallery';
+
+
 
 
 function App() {
@@ -18,7 +22,13 @@ function App() {
         { path: '/products', element: <Home></Home> },
         { path: '/shoes', element: <ShoesContainer></ShoesContainer> },
         { path: '/backpack', element: <BackpackCollection></BackpackCollection> },
-        { path: '/subscribe', element: <Subscribe></Subscribe> }
+        { path: '/subscribe', element: <Subscribe></Subscribe> },
+        { path: '/gallery', element: <Gallery></Gallery> },
+        {
+          path: 'shoes/:shoeId',
+
+          element: <Productdetail></Productdetail>
+        }
       ]
     }
 
@@ -26,6 +36,7 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
+
 
     </div>
   );

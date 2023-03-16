@@ -4,6 +4,7 @@ import Carousolcontainer from '../Carousolcontainer/Carousolcontainer';
 import Categories from '../Categories/Categories';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
+import Productdetail from '../Productdetail/Productdetail';
 import ShoesContainer from '../ShoesContainer/ShoesContainer';
 import Subscribe from '../Subscribe/Subscribe';
 
@@ -21,6 +22,7 @@ const Home = () => {
             <BackpackCollection></BackpackCollection>
             <Subscribe></Subscribe>
             <Footer></Footer>
+            {/* <Productdetail></Productdetail> */}
 
         </div>
     );
