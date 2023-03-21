@@ -7,11 +7,13 @@ import BackpackCollection from './components/BackpackCollection/BackpackCollecti
 import ShoesContainer from './components/ShoesContainer/ShoesContainer';
 import Productdetail from './components/Productdetail/Productdetail';
 import Gallery from './components/Gallery/Gallery';
+import Slider from './components/Slider/Slider';
 
 
 
 
 function App() {
+
   const router = createBrowserRouter([
     {
       path: '/',

@@ -1,8 +1,13 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { PropContext } from '../Shoes/Shoes';
+import Shoeslider from '../Shoeslider/Shoeslider';
 
 const ShoeModal = (props) => {
     const { closeModal } = props;
+    const [currentPicture, setCurrentPicture] = useState("bagdata.data1.img");
+    const handleClick = (e) => {
+        setCurrentPicture(e.target);
+    }
     const shoeshow = useContext(PropContext);
     return (
         <div>
@@ -12,10 +17,15 @@ const ShoeModal = (props) => {
                         <button className='btn btn-primary' onClick={() => closeModal(false)}> X </button>
                     </div>
                     <div className='row col-lg-12'>
-                        <div className='col-6 mb-3 h-sm-25'>
-                            <img src={shoeshow.data1.img} className='d-block w-100 ' alt="" />
+                        <div className='col-1 d-flex flex-column'>
+                            <img src={shoeshow.data1.img} className='h-25' alt="" onClick={handleClick} />
+                            <img src={shoeshow.data2.img} className='h-25' alt="" onClick={handleClick} />
+                            <img src={shoeshow.data3.img} className='h-25' alt="" onClick={handleClick} />
                         </div>
-                        <div className='col-6 '>
+                        <div className='col-6 mb-3 h-sm-25'>
+                            <Shoeslider></Shoeslider>
+                        </div>
+                        <div className='col'>
                             <h2>{shoeshow.data1.name}</h2>
                             <p>{shoeshow.data1.text}</p>
                             <h3>{shoeshow.data1.price}</h3>

@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../index.css';
+import Slider from '../Slider/Slider';
 
 
 const Modal = (props) => {
     const { closeModal, bagdata } = props;
+    const [currentPicture, setCurrentPicture] = useState("bagdata.data1.img");
+    const handleClick = (e) => {
+        setCurrentPicture(e.target);
+    }
     return (
         <div className='modal-background z-3 position-absolute'>
             <div className='modal-wrapper mt-5'>
@@ -12,10 +17,18 @@ const Modal = (props) => {
                         <button className='btn btn-primary' onClick={() => closeModal(false)}> X </button>
                     </div>
                     <div className='row col-lg-12'>
-                        <div className='col-6 mb-3 h-sm-25'>
-                            <img src={bagdata.data1.img} className='d-block w-100 ' alt="" />
+                        <div className='col-2 d-flex flex-column first-column'>
+                            <img src={bagdata.data1.img} className='h-25 border-end border-success-subtle' alt="" onClick={handleClick} />
+                            <img src={bagdata.data2.img} className='h-25 border-end border-success-subtle' alt="" onClick={handleClick} />
+                            <img src={bagdata.data3.img} className='h-25 border-end border-success-subtle' alt="" onClick={handleClick} />
                         </div>
-                        <div className='col-6 '>
+                        <div className='col-6 mb-3 h-sm-25'>
+
+                            <Slider>
+
+                            </Slider>
+                        </div>
+                        <div className='col '>
                             <h2>{bagdata.data1.name}</h2>
                             <p>{bagdata.data1.description}</p>
                             <h3>{bagdata.data1.price}</h3>
