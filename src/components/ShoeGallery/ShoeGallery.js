@@ -1,59 +1,33 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { PropContext } from '../Shoes/Shoes';
+import Singleshoe from '../Singleshoe/Singleshoe';
 
 const ShoeGallery = () => {
     const shoeshow = useContext(PropContext);
+    const [openone, setOpenOne] = useState(false);
+    const [opentwo, setOpenTwo] = useState(false);
+    const [openthree, setOpenThree] = useState(false);
     return (
         <div className='container '>
             <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4'>
-                <div className='col'>
-                    <div className="card border border-0 shadow-lg h-100" id='product-details' >
-                        <img src={shoeshow.data1.img} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title fs-1">{shoeshow.data1.name}</h5>
-                        </div>
-                        <div className="m-3">
-                            <h4>{shoeshow.data1.price}</h4>
-                            <div className="btn btn-warning" >
-                                Quick View
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-                <div className='col'>
-                    <div className="card border border-0 shadow-lg h-100" id='product-details' >
-                        <img src={shoeshow.data2.img} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title fs-1">{shoeshow.data2.name}</h5>
-                        </div>
-                        <div className="m-3">
-                            <h4>{shoeshow.data2.price}</h4>
-                            <div className="btn btn-warning" >
-                                Quick View
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-                <div className='col'>
-                    <div className="card border border-0 shadow-lg h-100" id='product-details' >
-                        <img src={shoeshow.data3.img} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title fs-1">{shoeshow.data3.name}</h5>
-                        </div>
-                        <div className="m-3">
-                            <h4>{shoeshow.data3.price}</h4>
-                            <div className="btn btn-warning" >
-                                Quick View
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
+                <Singleshoe
+                    img={shoeshow.data1.img}
+                    name={shoeshow.data1.name}
+                    price={shoeshow.data1.price}
+                    boolean={openone}
+                    handler={setOpenOne}></Singleshoe>
+                <Singleshoe
+                    img={shoeshow.data2.img}
+                    name={shoeshow.data2.name}
+                    price={shoeshow.data2.price}
+                    boolean={opentwo}
+                    handler={setOpenTwo}></Singleshoe>
+                <Singleshoe
+                    img={shoeshow.data3.img}
+                    name={shoeshow.data3.name}
+                    price={shoeshow.data3.price}
+                    boolean={openthree}
+                    handler={setOpenThree}></Singleshoe>
             </div>
 
         </div>

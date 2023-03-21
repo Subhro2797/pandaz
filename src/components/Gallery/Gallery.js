@@ -1,4 +1,3 @@
-import React from 'react';
 import BackpackGallery from '../BackpackGallery/BackpackGallery';
 import ShoeGallery from '../ShoeGallery/ShoeGallery';
 
