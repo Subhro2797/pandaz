@@ -17,10 +17,10 @@ const Modal = (props) => {
                         <button className='btn btn-primary' onClick={() => closeModal(false)}> X </button>
                     </div>
                     <div className='row col-lg-12'>
-                        <div className='col-2 d-flex flex-column first-column'>
-                            <img src={bagdata.data1.img} className='h-25 border-end border-success-subtle' alt="" onClick={handleClick} />
-                            <img src={bagdata.data2.img} className='h-25 border-end border-success-subtle' alt="" onClick={handleClick} />
-                            <img src={bagdata.data3.img} className='h-25 border-end border-success-subtle' alt="" onClick={handleClick} />
+                        <div className='col-1 d-flex flex-column first-column'>
+                            <img src={bagdata.data1.img} className='border-end border-success-subtle' alt="" onClick={handleClick} />
+                            <img src={bagdata.data2.img} className='border-end border-success-subtle' alt="" onClick={handleClick} />
+                            <img src={bagdata.data3.img} className='border-end border-success-subtle' alt="" onClick={handleClick} />
                         </div>
                         <div className='col-6 mb-3 h-sm-25'>
 

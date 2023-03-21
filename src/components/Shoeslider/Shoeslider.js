@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
-import nike1 from '../../images/shoes/My project.jpg';
+import nike1 from '../../images/shoes/shoe-3.png';
 import nike2 from '../../images/shoes/shoe-1.png';
 import nike3 from '../../images/shoes/shoe-2.png';
 const Shoeslider = () => {
