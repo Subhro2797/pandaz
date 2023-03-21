@@ -6,7 +6,7 @@ const ShoeModal = (props) => {
     const shoeshow = useContext(PropContext);
     return (
         <div>
-            <div className='modal-wrapper mt-5'>
+            <div className='modal-wrapper mt-5 z-3 position-absolute'>
                 <div className='modalContainer'>
                     <div className='d-flex justify-content-end me-3'>
                         <button className='btn btn-primary' onClick={() => closeModal(false)}> X </button>

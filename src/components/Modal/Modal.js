@@ -5,7 +5,7 @@ import '../../index.css';
 const Modal = (props) => {
     const { closeModal, bagdata } = props;
     return (
-        <div className='modal-background'>
+        <div className='modal-background z-3 position-absolute'>
             <div className='modal-wrapper mt-5'>
                 <div className='modalContainer'>
                     <div className='d-flex justify-content-end me-3'>
