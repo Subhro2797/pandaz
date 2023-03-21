@@ -8,7 +8,7 @@ const ShoeModal = (props) => {
         <div>
             <div className='modal-wrapper mt-5 z-3 position-absolute'>
                 <div className='modalContainer'>
-                    <div className='d-flex justify-content-end me-3'>
+                    <div className='d-flex justify-content-end me-3 mt-5'>
                         <button className='btn btn-primary' onClick={() => closeModal(false)}> X </button>
                     </div>
                     <div className='row col-lg-12'>
