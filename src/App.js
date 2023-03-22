@@ -25,7 +25,8 @@ function App() {
         { path: '/shoes', element: <ShoesContainer></ShoesContainer> },
         { path: '/backpack', element: <BackpackCollection></BackpackCollection> },
         { path: '/subscribe', element: <Subscribe></Subscribe> },
-        { path: '/gallery', element: <Gallery></Gallery> },
+        { path: 'gallery', element: <Gallery></Gallery> },
+        { path: 'products/gallery', element: <Gallery></Gallery> },
         {
           path: 'shoes/:shoeId',
 
