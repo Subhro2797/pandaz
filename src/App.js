@@ -20,6 +20,7 @@ function App() {
       children: [
         { path: '/', element: <Home></Home> },
         { path: '/home', element: <Home></Home> },
+        { path: '/products', element: <Gallery></Gallery> },
         { path: '/products', element: <Home></Home> },
         { path: '/shoes', element: <ShoesContainer></ShoesContainer> },
         { path: '/backpack', element: <BackpackCollection></BackpackCollection> },
