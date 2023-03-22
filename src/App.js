@@ -7,7 +7,6 @@ import BackpackCollection from './components/BackpackCollection/BackpackCollecti
 import ShoesContainer from './components/ShoesContainer/ShoesContainer';
 import Productdetail from './components/Productdetail/Productdetail';
 import Gallery from './components/Gallery/Gallery';
-import Slider from './components/Slider/Slider';
 
 
 
@@ -25,8 +24,7 @@ function App() {
         { path: '/shoes', element: <ShoesContainer></ShoesContainer> },
         { path: '/backpack', element: <BackpackCollection></BackpackCollection> },
         { path: '/subscribe', element: <Subscribe></Subscribe> },
-        { path: 'gallery', element: <Gallery></Gallery> },
-        { path: 'products/gallery', element: <Gallery></Gallery> },
+        { path: '/products/gallery', element: <Gallery></Gallery> },
         {
           path: 'shoes/:shoeId',
 
