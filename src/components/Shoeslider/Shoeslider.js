@@ -37,9 +37,9 @@ const Shoeslider = () => {
 
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className='image'>
                     <img
-                        className="d-block w-100 image"
+                        className="d-block w-100"
                         src={nike3}
                         alt="Third slide"
                     />
