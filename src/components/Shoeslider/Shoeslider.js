@@ -3,6 +3,9 @@ import { Carousel } from 'react-bootstrap';
 import nike1 from '../../images/shoes/shoe-3.png';
 import nike2 from '../../images/shoes/shoe-1.png';
 import nike3 from '../../images/shoes/shoe-2.png';
+import './Shoeslider.css';
+
+
 const Shoeslider = () => {
     const [index, setIndex] = useState(0);
 
@@ -12,17 +15,18 @@ const Shoeslider = () => {
     return (
         <div>
             <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item>
+                <Carousel.Item className='image'>
                     <img
                         className="d-block w-100"
                         src={nike1}
                         alt="First slide"
                     />
+
                     <Carousel.Caption>
 
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className='image'>
                     <img
                         className="d-block w-100"
                         src={nike2}
@@ -35,7 +39,7 @@ const Shoeslider = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
+                        className="d-block w-100 image"
                         src={nike3}
                         alt="Third slide"
                     />

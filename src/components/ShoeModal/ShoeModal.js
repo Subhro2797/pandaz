@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { PropContext } from '../Shoes/Shoes';
 import Shoeslider from '../Shoeslider/Shoeslider';
 
+
 const ShoeModal = (props) => {
     const { closeModal } = props;
     const [currentPicture, setCurrentPicture] = useState("bagdata.data1.img");
@@ -17,7 +18,7 @@ const ShoeModal = (props) => {
                         <button className='btn btn-primary' onClick={() => closeModal(false)}> X </button>
                     </div>
                     <div className='row col-lg-12'>
-                        <div className='col-1 d-flex flex-column'>
+                        <div className='col-1 d-flex flex-column unique'>
                             <img src={shoeshow.data1.img} className='h-25' alt="" onClick={handleClick} />
                             <img src={shoeshow.data2.img} className='h-25' alt="" onClick={handleClick} />
                             <img src={shoeshow.data3.img} className='h-25' alt="" onClick={handleClick} />

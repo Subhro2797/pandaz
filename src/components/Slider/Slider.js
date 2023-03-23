@@ -3,6 +3,7 @@ import { Carousel } from 'react-bootstrap';
 import bag1 from '../../images/bags/bag-1.png';
 import bag2 from '../../images/bags/bag-2.png';
 import bag3 from '../../images/bags/bag-3.png';
+import './Slider.css';
 const Slider = () => {
     const [index, setIndex] = useState(0);
 
@@ -12,17 +13,18 @@ const Slider = () => {
     return (
         <div>
             <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item>
+                <Carousel.Item className='image'>
                     <img
                         className="d-block w-100"
                         src={bag1}
                         alt="First slide"
                     />
+
                     <Carousel.Caption>
 
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className='image'>
                     <img
                         className="d-block w-100"
                         src={bag2}
@@ -33,7 +35,7 @@ const Slider = () => {
 
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className='image'>
                     <img
                         className="d-block w-100"
                         src={bag3}
