@@ -1,14 +1,18 @@
 import React, { useContext, useState } from 'react';
 import { PropContext } from '../Shoes/Shoes';
 import Shoeslider from '../Shoeslider/Shoeslider';
+import { OriginalContext } from '../../App';
 
 
 const ShoeModal = (props) => {
-    const { closeModal } = props;
+    const { closeModal, handleAddtoCart, product } = props;
+    console.log(product);
     const [currentPicture, setCurrentPicture] = useState("bagdata.data1.img");
     const handleClick = (e) => {
         setCurrentPicture(e.target);
     }
+    const newshoeshow = useContext(OriginalContext);
+
     const shoeshow = useContext(PropContext);
     return (
         <div>
@@ -37,7 +41,7 @@ const ShoeModal = (props) => {
                                 <button className='border border-secondary fw-semibold mx-2'>Medium</button>
                                 <button className='border border-secondary fw-semibold mx-2'>Large</button>
                             </div>
-                            <button className='btn btn-danger mt-3'>Add to Bag</button>
+                            <button onClick={() => handleAddtoCart(product)} className='btn btn-danger mt-3'>Add to Cart</button>
                             <div className='d-flex align-items-start flex-column'>
                                 <h6>Product details</h6>
                                 <p>This product is made of different sustainable elements which can be reused in future in regard to keeping the environment clean and hygenic. Our product uses polycarbonate as its primary element</p>

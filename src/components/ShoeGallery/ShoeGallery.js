@@ -14,18 +14,23 @@ const ShoeGallery = () => {
                     img={shoeshow.data1.img}
                     name={shoeshow.data1.name}
                     price={shoeshow.data1.price}
+                    id={shoeshow.data1.id}
                     boolean={openone}
-                    handler={setOpenOne}></Singleshoe>
+                    handler={setOpenOne}
+                    wholeproduct={shoeshow}></Singleshoe>
+
                 <Singleshoe
                     img={shoeshow.data2.img}
                     name={shoeshow.data2.name}
                     price={shoeshow.data2.price}
+                    id={shoeshow.data2.id}
                     boolean={opentwo}
                     handler={setOpenTwo}></Singleshoe>
                 <Singleshoe
                     img={shoeshow.data3.img}
                     name={shoeshow.data3.name}
                     price={shoeshow.data3.price}
+                    id={shoeshow.data3.id}
                     boolean={openthree}
                     handler={setOpenThree}></Singleshoe>
             </div>

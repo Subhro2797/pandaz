@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import ShoeModal from '../ShoeModal/ShoeModal';
+import { OriginalContext } from '../../App';
 
 
 const Singleshoe = (props) => {
+    // console.log(props);
+    const [product, setProduct] = useState([]);
+    const shoeinfo = useContext(OriginalContext);
+    useEffect(() => {
+        setProduct(shoeinfo);
+    }, []);
+
+    const handleAddtoCart = (product) => {
+        setProduct(product);
+    }
     return (
         <div>
             <div className='col'>
@@ -15,8 +26,9 @@ const Singleshoe = (props) => {
                         <h4>{props.price}</h4>
                         <button className='btn btn-warning' onClick={() => props.handler(true)}> Quick View</button>
                         {
-                            (props.boolean) && <ShoeModal closeModal={props.handler}></ShoeModal>
+                            (props.boolean) && <ShoeModal closeModal={props.handler} handleAddtoCart={handleAddtoCart} product={product}></ShoeModal>
                         }
+
 
                     </div>
                 </div>

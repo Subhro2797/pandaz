@@ -10,14 +10,14 @@ const data = {
         text: "The Ordem, released in 2014, is the first Nike football to have panels bonded together, rather than stitched. It is claimed to be rounder and to perform more uniformly regardless of where it is hit, and being almost waterproof.",
         price: '$420',
         img: `${nike1}`,
-        id: '1'
+        id: 'shoe1'
     },
     data2: {
         name: 'Nike 360',
         text: "The shoes feature some sneakerhead favorites including the Safrai print, patent leather, mesh upper, and even a crackle print that is reminiscent of the Jordan elephant print. ",
         price: '$699',
         img: `${nike2}`,
-        id: '2'
+        id: 'shoe2'
 
     },
     data3: {
@@ -25,7 +25,7 @@ const data = {
         text: "The shoes feature some sneakerhead favorites including the Safrai print, patent leather, mesh upper, and even a crackle print that is reminiscent of the Jordan elephant print.",
         price: '$899',
         img: `${nike3}`,
-        id: '3'
+        id: 'shoe3'
 
     }
 
