@@ -78,7 +78,10 @@ function App() {
       path: '/',
       element: <Main></Main>,
       children: [
-        { path: '/', element: <Home></Home> },
+        {
+          path: '/', element: <Home></Home>
+        },
+        { path: '/pandaz', element: <Home></Home> },
         { path: '/home', element: <Home></Home> },
         { path: '/products', element: <Cart></Cart> },
         { path: '/products', element: <Gallery></Gallery> },
